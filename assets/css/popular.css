@@ -1,0 +1,70 @@
+.popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.popular .box-container .box{
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    border: .1rem solid rgba(0,0,0,0.3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    position: relative;/*devido ao preço ser absolute*/
+}
+.popular .box-container .box img{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.popular .box-container .box .price{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: var(--red);
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+.popular .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.popular .box-container .box .stars i{
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+
+
+/*
+* SEC - STEPS
+*/
+
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: .5rem;
+}
+.steps .box{
+    flex: 1 1 25rem;
+    padding: .5rem;
+    text-align: center;
+}
+.steps .box img{
+    border-radius: 50%;
+    border: .5rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    width: 50%;
+}
+.steps .box h3{
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem ;
+}

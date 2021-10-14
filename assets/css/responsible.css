@@ -1,0 +1,66 @@
+/*CONFIGURACOES HOME - (mobile)  */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem ;
+    }
+}
+
+/*CONFIGURACOES HEADER - #menu-bar (mobile)  */
+
+@media (max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+        /*The clip-path property allows you to make complex shapes in CSS */
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0 );/*menu hamburgue fechado*/
+    }
+
+    /*classe active regra javascript*/
+    header .navbar.active{ 
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);/*menu hamburgue aberto*/
+    }
+    /*END classe active regra javascript*/
+
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .1rem solid rgba(0,0,0,0.1);
+        border-left: .5rem solid -var(--red);
+        background: #fff;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        display:50%;
+    }
+    .order .row form .inputBox input{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:400px){
+    html{
+        display:50%;
+    }
+}
+
+

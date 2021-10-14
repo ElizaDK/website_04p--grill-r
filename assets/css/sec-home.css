@@ -1,0 +1,51 @@
+/*
+*SECTION - HOME
+*/
+
+/*CONFIGURACOES SECTION - HOME  */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    /*imagem de fundo do home*/
+    background-image: url(../img/home-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .content h3{
+    font-size: 5rem;
+    color: #333;
+    font-family: 'Ephesis', cursive;
+}
+.home .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+    padding:1rem ;
+/*animação da imagem com nome escolhido - float*/
+    animation: float 3s linear infinite;
+}
+
+/*configuração do movimento da imagem*/
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+/*end configuração do movimento da imagem*/
+
